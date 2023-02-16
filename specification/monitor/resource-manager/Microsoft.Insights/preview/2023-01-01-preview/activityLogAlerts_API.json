@@ -333,6 +333,7 @@
       }
     },
     "ActivityLogAlertResource": {
+      "type": "object",
       "description": "An Activity Log Alert rule resource.",
       "allOf": [
         {
@@ -348,6 +349,7 @@
       }
     },
     "AlertRuleList": {
+      "type": "object",
       "description": "A list of Activity Log Alert rules.",
       "properties": {
         "value": {
@@ -490,25 +492,8 @@
         }
       }
     },
-    "ActionGroup": {
-      "description": "A pointer to an Azure Action Group.",
-      "properties": {
-        "actionGroupId": {
-          "description": "The resource ID of the Action Group. This cannot be null or empty.",
-          "type": "string"
-        },
-        "webhookProperties": {
-          "description": "the dictionary of custom properties to include with the post operation. These data are appended to the webhook payload.",
-          "additionalProperties": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "actionGroupId"
-      ]
-    },
     "AlertRulePatchObject": {
+      "type": "object",
       "description": "An Activity Log Alert rule object for the body of patch operations.",
       "properties": {
         "tags": {
@@ -525,6 +510,7 @@
       }
     },
     "AlertRulePatchProperties": {
+      "type": "object",
       "description": "An Activity Log Alert rule properties for patch operations.",
       "properties": {
         "enabled": {
@@ -557,6 +543,7 @@
       "in": "path",
       "required": true,
       "type": "string",
+      "pattern": "^[-\\w\\._\\(\\)]+$",
       "description": "The name of the Activity Log Alert rule.",
       "x-ms-parameter-location": "method"
     }
