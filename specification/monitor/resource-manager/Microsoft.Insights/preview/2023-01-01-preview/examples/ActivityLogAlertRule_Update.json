@@ -43,14 +43,14 @@
             ]
           },
           "actions": {
-            "actionGroups": [
-              {
-                "actionGroupId": "/subscriptions/187f412d-1758-44d9-b052-169e2564721d/resourceGroups/MyResourceGroup/providers/microsoft.insights/actionGroups/SampleActionGroup",
-                "webhookProperties": {
-                  "sampleWebhookProperty": "SamplePropertyValue"
-                }
-              }
-            ]
+            "actionGroups": ["/subscriptions/187f412d-1758-44d9-b052-169e2564721d/resourceGroups/MyResourceGroup/providers/Microsoft.Insights/actionGroups/SampleActionGroup"],
+            "actionProperties": {
+              "Email.Title": "my email title"
+            },
+            "customProperties": {
+              "customProperty1": "customProperty1_value",
+              "customProperty2": "customProperty2_value"
+            }
           },
           "enabled": false,
           "description": "Description of sample Activity Log Alert rule."

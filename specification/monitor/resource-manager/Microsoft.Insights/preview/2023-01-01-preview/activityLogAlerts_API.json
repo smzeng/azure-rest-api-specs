@@ -387,7 +387,7 @@
         },
         "actions": {
           "description": "The actions that will activate when the condition is met.",
-          "$ref": "#/definitions/ActionList"
+          "$ref": "#/definitions/Action"
         },
         "enabled": {
           "description": "Indicates whether this Activity Log Alert rule is enabled. If an Activity Log Alert rule is not enabled, then none of its actions will be activated.",
@@ -462,18 +462,31 @@
         }
       }
     },
-    "ActionList": {
-      "description": "A list of Activity Log Alert rule actions.",
+    "Action": {
+      "type": "object",
+      "description": "Actions to invoke when the alert fires.",
       "properties": {
         "actionGroups": {
-          "description": "The list of the Action Groups.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ActionGroup"
+            "type": "string"
           },
-          "x-ms-identifiers": [
-            "actionGroupId"
-          ]
+          "description": "Action Group resource Ids to invoke when the alert fires."
+        },
+        "actionProperties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "A dictionary with properties and configuration items for the action groups."
+        },
+        "customProperties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "description": "A dictionary dictionary of custom properties to include with the post operation. The data is appended to the alert payload."
+          },
+          "description": "A dictionary dictionary of custom properties to include with the post operation. The data is appended to the alert payload."
         }
       }
     },
