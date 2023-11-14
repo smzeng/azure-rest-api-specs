@@ -202,6 +202,9 @@
         "x-ms-examples": {
           "Create environments": {
             "$ref": "./examples/ManagedEnvironments_CreateOrUpdate.json"
+          },
+          "Create environment with custom infrastructureResourceGroup": {
+            "$ref": "./examples/ManagedEnvironments_CustomInfrastructureResourceGroup_Create.json"
           }
         }
       },
@@ -994,8 +997,8 @@
         "tags": [
           "ManagedEnvironments"
         ],
-        "summary": "Get all workload Profile States for a Premium Managed Environment..",
-        "description": "Get all workload Profile States for a Premium Managed Environment.",
+        "summary": "Get all workload Profile States for a Managed Environment..",
+        "description": "Get all workload Profile States for a Managed Environment.",
         "operationId": "ManagedEnvironments_ListWorkloadProfileStates",
         "parameters": [
           {
@@ -1218,7 +1221,7 @@
                 "$ref": "#/definitions/WorkloadProfile"
               },
               "x-ms-identifiers": [
-                "workloadProfileType"
+                "name"
               ]
             },
             "kedaConfiguration": {
@@ -1228,6 +1231,14 @@
             "daprConfiguration": {
               "$ref": "#/definitions/DaprConfiguration",
               "description": "The configuration of Dapr component."
+            },
+            "infrastructureResourceGroup": {
+              "description": "Name of the platform-managed resource group created for the Managed Environment to host infrastructure resources. If a subnet ID is provided, this resource group will be created in the same subscription as the subnet.",
+              "type": "string",
+              "x-ms-mutability": [
+                "create",
+                "read"
+              ]
             }
           },
           "x-ms-client-flatten": true
@@ -1308,6 +1319,10 @@
       "description": "Workload profile to scope container app execution.",
       "type": "object",
       "properties": {
+        "name": {
+          "$ref": "./CommonDefinitions.json#/definitions/WorkloadProfileName",
+          "description": "Workload profile type for the workloads to run on."
+        },
         "workloadProfileType": {
           "$ref": "./CommonDefinitions.json#/definitions/WorkloadProfileType",
           "description": "Workload profile type for the workloads to run on."
@@ -1324,13 +1339,12 @@
         }
       },
       "required": [
-        "workloadProfileType",
-        "minimumCount",
-        "maximumCount"
+        "name",
+        "workloadProfileType"
       ]
     },
     "workloadProfileStates": {
-      "description": "Collection of all the workload Profile States for a Premium Managed Environment..",
+      "description": "Collection of all the workload Profile States for a Managed Environment..",
       "type": "object",
       "allOf": [
         {
