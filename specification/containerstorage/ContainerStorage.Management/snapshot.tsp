@@ -13,7 +13,6 @@ namespace Microsoft.ContainerStorage;
 interface Snapshots {
   get is ArmResourceRead<Snapshot>;
   #suppress "@azure-tools/typespec-azure-core/invalid-final-state" "MUST CHANGE ON NEXT UPDATE"
-  #suppress "@azure-tools/typespec-azure-core/no-openapi" "DOT NOT COPY - migrate to LRO apis"
   @extension(
     "x-ms-long-running-operation-options",
     {

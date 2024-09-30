@@ -1,10 +1,7 @@
-import "@azure-tools/typespec-client-generator-core";
-
 using TypeSpec.Rest;
 using Azure.ResourceManager;
 using TypeSpec.Http;
 using TypeSpec.OpenAPI;
-using Azure.ClientGenerator.Core;
 
 namespace Microsoft.AzureSphere;
 /**
@@ -66,6 +63,11 @@ interface Certificates {
 @@doc(Certificates.retrieveProofOfPossessionNonce::parameters.body,
   "Proof of possession nonce request body "
 );
-@@clientName(Certificates.retrieveProofOfPossessionNonce::parameters.body,
+@@encodedName(Certificates.retrieveProofOfPossessionNonce::parameters.body,
+  "application/json",
+  "proofOfPossessionNonceRequest"
+);
+@@extension(Certificates.retrieveProofOfPossessionNonce::parameters.body,
+  "x-ms-client-name",
   "proofOfPossessionNonceRequest"
 );

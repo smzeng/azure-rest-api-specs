@@ -921,7 +921,7 @@
             "runningState": {
               "description": "Current running state of the job",
               "enum": [
-                "Ready",
+                "Running",
                 "Progressing",
                 "Suspended"
               ],

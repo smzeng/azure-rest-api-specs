@@ -7,11 +7,10 @@ const repoRoot = join(__dirname, "..", "..", "..", "..");
 
 async function npmExec(...args: string[]) {
   const allArgs = ["exec", "--no", "--"].concat(args);
+
   console.log(`${repoRoot}$ npm ${allArgs.join(" ")}`);
 
-  const result = await execa("npm", allArgs, { all: true, cwd: repoRoot, reject: false });
-  console.log(result.all);
-  return result;
+  return await execa("npm", allArgs, { all: true, cwd: repoRoot, reject: false });
 }
 
 async function convert(expect: ExpectStatic, readme: string) {

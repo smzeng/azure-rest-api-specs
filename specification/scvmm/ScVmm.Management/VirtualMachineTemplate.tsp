@@ -40,7 +40,6 @@ interface VirtualMachineTemplates {
     LroHeaders = Azure.Core.Foundations.RetryAfterHeader
   >;
   /** Updates the VirtualMachineTemplate resource. */
-  #suppress "@azure-tools/typespec-azure-core/no-openapi" "DO NOT COPY - TODO migrate to LRO apis"
   @summary("Implements the VirtualMachineTemplate PATCH method.")
   @extension(
     "x-ms-long-running-operation-options",
@@ -50,7 +49,6 @@ interface VirtualMachineTemplates {
   )
   update is ArmTagsPatchAsync<VirtualMachineTemplate>;
   /** Deregisters the ScVmm VM Template from Azure. */
-  #suppress "@azure-tools/typespec-azure-core/no-openapi" "DO NOT COPY - TODO migrate to LRO apis"
   @summary("Implements VirtualMachineTemplate DELETE method.")
   @extension(
     "x-ms-long-running-operation-options",

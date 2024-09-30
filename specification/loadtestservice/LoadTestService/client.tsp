@@ -54,6 +54,7 @@ interface TestRunOperations {
   listMetricNamespaces is LoadTestRun.listMetricNamespaces;
   listMetrics is LoadTestRun.listMetrics;
   listTestRuns is LoadTestRun.listTestRuns;
+  #suppress "@azure-tools/typespec-azure-core/no-operation-id"
   @clientName("stopTestRun", "javascript,python,java,csharp,go")
   stop is LoadTestRun.stop;
 }
@@ -78,6 +79,7 @@ interface TestProfileRunOperations {
   deleteTestProfileRun is TestProfileRunAdministration.deleteTestProfileRun;
   getTestProfileRun is TestProfileRunAdministration.getTestProfileRun;
   listTestProfileRuns is TestProfileRunAdministration.listTestProfileRuns;
+  #suppress "@azure-tools/typespec-azure-core/no-operation-id"
   @clientName("stopTestProfileRun", "javascript,python,java,csharp,go")
   stop is TestProfileRunAdministration.stop;
 }

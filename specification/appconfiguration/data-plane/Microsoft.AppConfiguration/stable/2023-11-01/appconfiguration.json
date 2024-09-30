@@ -132,8 +132,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "@nextLink",
-          "itemName": "items"
+          "nextLinkName": "@nextLink"
         }
       },
       "head": {
@@ -394,8 +393,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "@nextLink",
-          "itemName": "items"
+          "nextLinkName": "@nextLink"
         }
       },
       "head": {
@@ -1212,8 +1210,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "@nextLink",
-          "itemName": "items"
+          "nextLinkName": "@nextLink"
         }
       },
       "head": {
@@ -1693,8 +1690,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "@nextLink",
-          "itemName": "items"
+          "nextLinkName": "@nextLink"
         }
       },
       "head": {
@@ -2047,8 +2043,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "@nextLink",
-          "itemName": "items"
+          "nextLinkName": "@nextLink"
         }
       },
       "head": {

@@ -11,18 +11,16 @@ namespace Microsoft.LoadTestService;
 
 interface Operations extends Azure.ResourceManager.Operations {}
 
-#suppress "deprecated" "LEGACY - DO NOT COPY - FIX"
 @@encodedName(LoadTests.createOrUpdate::parameters.resource,
   "application/json",
   "LoadTestResource"
 );
 
-#suppress "deprecated" "LEGACY - DO NOT COPY - FIX"
 @@encodedName(LoadTests.update::parameters.properties,
   "application/json",
   "LoadTestResourcePatchRequestBody"
 );
-#suppress "deprecated" "LEGACY - DO NOT COPY - FIX"
+
 @@encodedName(Quotas.checkAvailability::parameters.body,
   "application/json",
   "QuotaBucketRequest"
@@ -55,7 +53,7 @@ interface LoadTests {
 
   delete is ArmResourceDeleteWithoutOkAsync<LoadTestResource>;
 
-  #suppress "@azure-tools/typespec-azure-core/no-openapi" "OperationID already published."
+  #suppress "@azure-tools/typespec-azure-core/no-operation-id" "OperationID already published."
   @operationId("LoadTests_ListOutboundNetworkDependenciesEndpoints")
   @doc("Lists the endpoints that agents may call as part of load testing.")
   outboundNetworkDependenciesEndpoints is CustomOperations.ArmResourceActionSyncCustomGet<

@@ -626,7 +626,8 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/ProofOfPossessionNonceRequest"
-            }
+            },
+            "x-ms-client-name": "proofOfPossessionNonceRequest"
           }
         ],
         "responses": {
@@ -1067,7 +1068,8 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/ListDeviceGroupsRequest"
-            }
+            },
+            "x-ms-client-name": "listDeviceGroupsRequest"
           }
         ],
         "responses": {
@@ -2043,7 +2045,8 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/ClaimDevicesRequest"
-            }
+            },
+            "x-ms-client-name": "claimDevicesRequest"
           }
         ],
         "responses": {
@@ -2941,7 +2944,8 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/GenerateCapabilityImageRequest"
-            }
+            },
+            "x-ms-client-name": "generateDeviceCapabilityRequest"
           }
         ],
         "responses": {
@@ -3073,7 +3077,8 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/Image"
-            }
+            },
+            "x-ms-client-name": "uploadImageRequest"
           }
         ],
         "responses": {

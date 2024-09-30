@@ -40,7 +40,6 @@ interface PortalTenant {
 @@clientName(PortalTenant.compilefile::parameters.body,
   "portalTenantCompileFile"
 );
-#suppress "deprecated" "LEGACY - DO NOT COPY - FIX"
 @@encodedName(PortalTenant.compilefile::parameters.body,
   "application/json",
   "portalTenantCompileFile"

@@ -1,5 +1,3 @@
-import "@azure-tools/typespec-client-generator-core";
-
 using TypeSpec.Http;
 using Azure.ResourceManager;
 using Azure.ResourceManager.Foundations;
@@ -343,7 +341,6 @@ model CatalogUpdate {
   /**
    * Resource tags.
    */
-  #suppress "@azure-tools/typespec-azure-resource-manager/arm-no-record" "existing API"
   tags?: Record<string>;
 }
 
@@ -704,8 +701,7 @@ model ProductUpdate {
   /**
    * The updatable properties of the Product.
    */
-  #suppress "deprecated" "Legacy flatten"
-  @Azure.ClientGenerator.Core.flattenProperty
+  @extension("x-ms-client-flatten", true)
   properties?: ProductUpdateProperties;
 }
 
@@ -726,8 +722,7 @@ model DeviceGroupUpdate {
   /**
    * The updatable properties of the DeviceGroup.
    */
-  #suppress "deprecated" "Legacy flatten"
-  @Azure.ClientGenerator.Core.flattenProperty
+  @extension("x-ms-client-flatten", true)
   properties?: DeviceGroupUpdateProperties;
 }
 
@@ -778,8 +773,7 @@ model DeviceUpdate {
   /**
    * The updatable properties of the Device.
    */
-  #suppress "deprecated" "Legacy flatten"
-  @Azure.ClientGenerator.Core.flattenProperty
+  @extension("x-ms-client-flatten", true)
   properties?: DeviceUpdateProperties;
 }
 

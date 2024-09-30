@@ -13,7 +13,6 @@ namespace Microsoft.ContainerStorage;
 interface Volumes {
   get is ArmResourceRead<Volume>;
   #suppress "@azure-tools/typespec-azure-core/invalid-final-state" "MUST CHANGE ON NEXT UPDATE"
-  #suppress "@azure-tools/typespec-azure-core/no-openapi" "DOT NOT COPY - migrate to LRO apis"
   @extension(
     "x-ms-long-running-operation-options",
     {

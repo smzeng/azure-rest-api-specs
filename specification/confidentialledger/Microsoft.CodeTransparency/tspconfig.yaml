@@ -10,6 +10,7 @@ options:
   "@azure-tools/typespec-autorest":
     azure-resource-provider-folder: "./data-plane"
     emitter-output-dir: "{project-root}/.."
+    examples-directory: "{project-root}/examples"
     output-file: "{azure-resource-provider-folder}/{service-name}/{version-status}/{version}/cts.json"
   "@azure-tools/typespec-python":
     flavor: azure
@@ -20,6 +21,7 @@ options:
     models-mode: none
     generate-test: true
     generate-sample: true
+    examples-dir: "{project-root}/examples"
   "@azure-tools/typespec-csharp":
     flavor: azure
     package-dir: "Azure.Security.CodeTransparency"

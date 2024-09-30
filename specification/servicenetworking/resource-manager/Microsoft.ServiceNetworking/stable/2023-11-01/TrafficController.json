@@ -1282,8 +1282,7 @@
             "description": "Resource in Canceled State"
           }
         ]
-      },
-      "readOnly": true
+      }
     },
     "ResourceId": {
       "type": "object",

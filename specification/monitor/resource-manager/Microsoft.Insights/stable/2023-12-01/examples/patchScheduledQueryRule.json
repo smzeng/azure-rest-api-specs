@@ -60,7 +60,7 @@
               "key12": "value12"
             }
           },
-          "resolveConfiguration": {
+          "ruleResolveConfiguration": {
             "autoResolved": true,
             "timeToResolve": "PT10M"
           },

@@ -89,8 +89,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "NextLink",
-          "itemName": "Value"
+          "nextLinkName": "NextLink"
         }
       }
     },
@@ -326,8 +325,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "NextLink",
-          "itemName": "Value"
+          "nextLinkName": "NextLink"
         }
       }
     },

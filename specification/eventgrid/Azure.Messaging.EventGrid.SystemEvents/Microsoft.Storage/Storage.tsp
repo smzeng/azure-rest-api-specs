@@ -191,9 +191,6 @@ namespace Microsoft.EventGrid.SystemEvents {
 
     /** Execution statistics of a specific policy action in a Blob Management cycle. */
     tierToArchiveSummary: StorageLifecyclePolicyActionSummaryDetail;
-
-    /** Execution statistics of a specific policy action in a Blob Management cycle. */
-    tierToColdSummary: StorageLifecyclePolicyActionSummaryDetail;
   }
 
   /** Execution statistics of a specific policy action in a Blob Management cycle. */

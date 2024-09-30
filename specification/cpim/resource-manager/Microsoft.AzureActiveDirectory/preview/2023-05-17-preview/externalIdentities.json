@@ -1534,6 +1534,7 @@
             "create",
             "read"
           ],
+          "x-ms-client-flatten": true,
           "x-ms-enum": {
             "name": "CIAMResourceSKUTier",
             "modelAsString": true,

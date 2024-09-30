@@ -2207,7 +2207,8 @@
       "properties": {
         "targetResourceId": {
           "type": "string",
-          "description": "ID of the target Azure resource where the document classifier should be copied to."
+          "description": "ID of the target Azure resource where the document classifier should be copied to.",
+          "x-ms-azure-resource": true
         },
         "targetResourceRegion": {
           "type": "string",
@@ -2412,7 +2413,8 @@
       "properties": {
         "targetResourceId": {
           "type": "string",
-          "description": "ID of the target Azure resource where the document model should be copied to."
+          "description": "ID of the target Azure resource where the document model should be copied to.",
+          "x-ms-azure-resource": true
         },
         "targetResourceRegion": {
           "type": "string",

@@ -12,13 +12,11 @@ interface SystemVersions extends OracleLocationBasedResource<SystemVersion> {}
   "List SystemVersion resources by Location"
 );
 
-#suppress "@azure-tools/typespec-azure-core/no-openapi" "TODO FIX - DO NOT COPY - BAD PATTERN"
 @@Autorest.example(SystemVersions.listByLocation,
   "./examples/systemVersions_listByLocation.json",
   "List Exadata System Versions by the provided filter"
 );
 
-#suppress "@azure-tools/typespec-azure-core/no-openapi" "TODO FIX - DO NOT COPY - BAD PATTERN"
 @@Autorest.example(SystemVersions.get,
   "./examples/systemVersions_get.json",
   "Get Exadata System Version"

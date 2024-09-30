@@ -32,10 +32,10 @@ model OperationStatus {
   @doc("The id of the resource.")
   resourceId?: string;
 
-  @doc("The start time of the operation, in RFC3339 format.")
+  @doc("The start time of the operation.")
   startTime?: utcDateTime;
 
-  @doc("The end time of the operation, in RFC3339 format.")
+  @doc("The end time of the operation.")
   endTime?: utcDateTime;
 
   @doc("Percent of the operation that is complete.")

@@ -5,12 +5,12 @@
     "resourceGroupName": "resourceGroup1",
     "iacProfileName": "iacprofile",
     "parameters": {
-      "templateName": "hciaksss",
-      "scaleProperties": [
+      "templateName": "base",
+      "scaleRequirement": [
         {
-          "stage": "dev",
           "region": "useast",
-          "numberOfStores": 1
+          "numberOfStore": 10,
+          "stage": "dev"
         }
       ]
     }

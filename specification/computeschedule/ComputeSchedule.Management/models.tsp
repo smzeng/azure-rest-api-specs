@@ -114,13 +114,14 @@ model Schedule {
   timeZone: string;
 
   @doc("The deadlinetype of the operation, this can either be InitiateAt or CompleteBy")
+  @extension("x-ms-enum.modelAsString", true)
   deadlineType: DeadlineType = DeadlineType.Unknown;
 }
 
 @doc("The resources needed for the user request")
 model Resources {
   @doc("The resource ids used for the request")
-  ids: Array<armResourceIdentifier>;
+  ids: Array<Azure.Core.armResourceIdentifier>;
 }
 
 @doc("The retry policy for the user request")
@@ -156,9 +157,10 @@ model ResourceOperationDetails {
   operationId: string;
 
   @doc("Unique identifier for the resource involved in the operation, eg ArmId")
-  resourceId: armResourceIdentifier;
+  resourceId: Azure.Core.armResourceIdentifier;
 
   @doc("Type of operation performed on the resources")
+  @extension("x-ms-enum.modelAsString", true)
   opType: ResourceOperationType = ResourceOperationType.Unknown;
 
   @doc("Subscription id attached to the request")
@@ -169,9 +171,11 @@ model ResourceOperationDetails {
   deadline: offsetDateTime;
 
   @doc("Type of deadline of the operation")
+  @extension("x-ms-enum.modelAsString", true)
   deadlineType: DeadlineType = DeadlineType.Unknown;
 
   @doc("Current state of the operation")
+  @extension("x-ms-enum.modelAsString", true)
   state: OperationState = OperationState.Unknown;
 
   @doc("Timezone for the operation")
@@ -191,7 +195,7 @@ model ResourceOperationDetails {
 @doc("High level response from an operation on a resource")
 model ResourceOperation {
   @doc("Unique identifier for the resource involved in the operation, eg ArmId")
-  resourceId?: armResourceIdentifier;
+  resourceId?: Azure.Core.armResourceIdentifier;
 
   @doc("Resource level error code if it exists")
   errorCode?: string;
@@ -257,7 +261,7 @@ model SubmitDeallocateRequest {
   @doc("The resources for the request")
   resources: Resources;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -270,8 +274,8 @@ model DeallocateResourceOperationResponse {
   type: string;
 
   @doc("The location of the deallocate request eg westus")
-  @visibility("read", "create")
-  location: azureLocation;
+  @extension("x-ms-mutability", ["read", "create"])
+  location: string;
 
   @extension("x-ms-identifiers", ["resourceId"])
   @doc("The results from the deallocate request if no errors exist")
@@ -290,7 +294,7 @@ model SubmitStartRequest {
   @doc("The resources for the request")
   resources: Resources;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -303,8 +307,8 @@ model StartResourceOperationResponse {
   type: string;
 
   @doc("The location of the start request eg westus")
-  @visibility("read", "create")
-  location: azureLocation;
+  @extension("x-ms-mutability", ["read", "create"])
+  location: string;
 
   @extension("x-ms-identifiers", ["resourceId"])
   @doc("The results from the start request if no errors exist")
@@ -323,7 +327,7 @@ model SubmitHibernateRequest {
   @doc("The resources for the request")
   resources: Resources;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -336,8 +340,8 @@ model HibernateResourceOperationResponse {
   type: string;
 
   @doc("The location of the Hibernate request eg westus")
-  @visibility("read", "create")
-  location: azureLocation;
+  @extension("x-ms-mutability", ["read", "create"])
+  location: string;
 
   @extension("x-ms-identifiers", ["resourceId"])
   @doc("The results from the Hibernate request if no errors exist")
@@ -353,7 +357,7 @@ model ExecuteDeallocateRequest {
   @doc("The resources for the request")
   resources: Resources;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -365,7 +369,7 @@ model ExecuteHibernateRequest {
   @doc("The resources for the request")
   resources: Resources;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -377,7 +381,7 @@ model ExecuteStartRequest {
   @doc("The resources for the request")
   resources: Resources;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -387,7 +391,7 @@ model GetOperationStatusRequest {
   @doc("The list of operation ids to get the status of")
   operationIds: Array<string>;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 
@@ -404,7 +408,7 @@ model CancelOperationsRequest {
   @doc("The list of operation ids to cancel operations on")
   operationIds: Array<string>;
 
-  @doc("CorrelationId item")
+  @doc("Correlationid item")
   correlationid: string;
 }
 

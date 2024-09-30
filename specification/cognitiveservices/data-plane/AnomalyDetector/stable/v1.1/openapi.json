@@ -148,8 +148,7 @@
           }
         },
         "x-ms-pageable": {
-          "nextLinkName": "nextLink",
-          "itemName": "models"
+          "nextLinkName": "nextLink"
         }
       },
       "post": {

@@ -3101,10 +3101,7 @@
             "type": "string"
           }
         }
-      },
-      "required": [
-        "operationId"
-      ]
+      }
     },
     "AvsClusterFailedEventData": {
       "type": "object",
@@ -3147,10 +3144,7 @@
           "type": "string",
           "description": "Id of the operation that caused this event."
         }
-      },
-      "required": [
-        "operationId"
-      ]
+      }
     },
     "AvsPrivateCloudFailedEventData": {
       "type": "object",
@@ -3213,11 +3207,7 @@
             "type": "string"
           }
         }
-      },
-      "required": [
-        "operationId",
-        "cmdletId"
-      ]
+      }
     },
     "AvsScriptExecutionFailedEventData": {
       "type": "object",
@@ -8677,17 +8667,12 @@
         "tierToArchiveSummary": {
           "$ref": "#/definitions/StorageLifecyclePolicyActionSummaryDetail",
           "description": "Execution statistics of a specific policy action in a Blob Management cycle."
-        },
-        "tierToColdSummary": {
-          "$ref": "#/definitions/StorageLifecyclePolicyActionSummaryDetail",
-          "description": "Execution statistics of a specific policy action in a Blob Management cycle."
         }
       },
       "required": [
         "deleteSummary",
         "tierToCoolSummary",
-        "tierToArchiveSummary",
-        "tierToColdSummary"
+        "tierToArchiveSummary"
       ]
     },
     "StorageTaskAssignmentCompletedEventData": {

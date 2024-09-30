@@ -162,7 +162,7 @@
 /specification/monitor/ @gucalder
 
 # PRLabel: %Network
-/specification/network/ @kamboj-prjwl
+/specification/network/ @GuptaVertika
 
 # PRLabel: %Notification Hub
 /specification/notificationhubs/ @amolr @smithab
@@ -260,9 +260,6 @@
 # PRLabel: %Web Apps
 /specification/web/ @naveedaz @Azure/azure-app-service-control-plane
 
-# PRLabel: %Video Indexer
-/specification/vi/ @dazilb @tshoham @omerhaimov @bermanraz @Einav94
-
 # PRLabel: %AzureML - Compute Instance
 /specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/**/machineLearningServices.json @Azure/aml-compute-instance
 
@@ -278,14 +275,13 @@
 ###########
 # Eng Sys
 ###########
-/.gitattributes     @weshaggard @mikeharder
-/.gitignore         @weshaggard @mikeharder
-/.prettierrc.json   @weshaggard @mikeharder
-/package-lock.json  @weshaggard @mikeharder
-/package.json       @weshaggard @mikeharder
-/tsconfig.json      @weshaggard @mikeharder
+/.gitattributes     @weshaggard @mikeharder 
+/.gitignore         @weshaggard @mikeharder 
+/.prettierrc.json   @weshaggard @mikeharder 
+/package-lock.json  @weshaggard @mikeharder 
+/package.json       @weshaggard @mikeharder 
+/tsconfig.json      @weshaggard @mikeharder 
 /.azure-pipelines/  @weshaggard @mikeharder @benbp
 /.github/           @weshaggard @mikeharder @benbp
 /eng/               @weshaggard @mikeharder @benbp
-/scripts/           @weshaggard @mikeharder
-/.github/CODEOWNERS @Azure/azure-sdk-eng
+/scripts/           @weshaggard @mikeharder 

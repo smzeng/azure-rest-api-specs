@@ -5,7 +5,6 @@ import "./fleetmember.tsp";
 import "./update/common.tsp";
 import "./update/run.tsp";
 import "./update/strategy.tsp";
-import "./update/autoupgradeprofile.tsp";
 
 using Azure.ResourceManager;
 using TypeSpec.Http;
@@ -57,9 +56,4 @@ enum Versions {
   @useDependency(Azure.Core.Versions.v1_0_Preview_2)
   @useDependency(Azure.ResourceManager.Versions.v1_0_Preview_1)
   v2024_04_01: "2024-04-01",
-
-  @doc("Azure Kubernetes Fleet Manager api version 2024-05-02-preview.")
-  @useDependency(Azure.Core.Versions.v1_0_Preview_2)
-  @useDependency(Azure.ResourceManager.Versions.v1_0_Preview_1)
-  v2024_05_02_preview: "2024-05-02-preview",
 }

@@ -64,12 +64,10 @@ interface Dashboards {
 @@doc(Dashboards.update::parameters.properties,
   "The updatable fields of a Dashboard."
 );
-#suppress "deprecated" "LEGACY - DO NOT COPY - FIX"
 @@encodedName(Dashboards.createOrUpdate::parameters.resource,
   "application/json",
   "dashboard"
 );
-#suppress "deprecated" "LEGACY - DO NOT COPY - FIX"
 @@encodedName(Dashboards.update::parameters.properties,
   "application/json",
   "dashboard"

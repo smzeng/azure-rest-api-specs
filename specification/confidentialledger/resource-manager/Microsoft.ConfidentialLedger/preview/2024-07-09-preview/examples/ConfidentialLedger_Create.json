@@ -24,9 +24,7 @@
         "hostLevel": "Info",
         "maxBodySizeInMb": 1,
         "subjectName": "CN=CCF Node",
-        "nodeCount": 3,
-        "writeLBAddressPrefix": "write",
-        "workerThreads": 0
+        "nodeCount": 3
       },
       "location": "EastUS",
       "tags": {

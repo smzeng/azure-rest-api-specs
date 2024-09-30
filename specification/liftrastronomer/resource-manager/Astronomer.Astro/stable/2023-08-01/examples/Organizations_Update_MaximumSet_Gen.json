@@ -3,7 +3,7 @@
   "operationId": "Organizations_Update",
   "parameters": {
     "api-version": "2023-08-01",
-    "subscriptionId": "35FBF232-4B65-40E8-ADA3-49FE99B824D6",
+    "subscriptionId": "43454B17-172A-40FE-80FA-549EA23D12B3",
     "resourceGroupName": "rgastronomer",
     "organizationName": "6.",
     "properties": {
@@ -15,36 +15,24 @@
         "key1474": "bqqyipxnbbxryhznyaosmtpo"
       },
       "properties": {
-        "marketplace": {
-          "subscriptionId": "bpoiahcvraqjhwpqcyvmxl",
-          "subscriptionStatus": "PendingFulfillmentStart",
-          "offerDetails": {
-            "publisherId": "zhnlxf",
-            "offerId": "rh",
-            "planId": "uqlecfuht",
-            "planName": "secxe",
-            "termUnit": "skbmivxsechzkyuxvd",
-            "termId": "qvnaspsilt"
-          }
-        },
         "user": {
-          "firstName": "pantcaqwknzxnjs",
-          "lastName": "loytwkjq",
+          "firstName": "qeuofehzypzljgcuysugefbgxde",
+          "lastName": "g",
           "emailAddress": ".K_@e7N-g1.xjqnbPs",
-          "upn": "sbfjcucbtwvnnhyzpfycykerzqjvo",
-          "phoneNumber": "smwcipwxoxdmzgj"
+          "upn": "uwtprzdfpsqmktx",
+          "phoneNumber": "aqpyxznvqpgkzohevynofrjdfgoo"
         },
         "partnerOrganizationProperties": {
-          "organizationId": "ugyxg",
-          "workspaceId": "jbpphzsonkhnaxbwlpmgrwuklcx",
-          "organizationName": "6.",
+          "organizationId": "lrtmbkvyvvoszhjevohkmyjhfyty",
+          "workspaceId": "xsepuskdhejaadusyxq",
+          "organizationName": "U2P_",
           "workspaceName": "L.-y_--:",
           "singleSignOnProperties": {
             "singleSignOnState": "Initial",
-            "enterpriseAppId": "hkqosvz",
-            "singleSignOnUrl": "mgr",
+            "enterpriseAppId": "mklfypyujwumgwdzae",
+            "singleSignOnUrl": "ymmtzkyghvinvhgnqlzwrr",
             "aadDomains": [
-              "ynmjdshvcxpusrtv"
+              "kfbleh"
             ],
             "provisioningState": "Succeeded"
           }
@@ -57,59 +45,59 @@
       "body": {
         "properties": {
           "marketplace": {
-            "subscriptionId": "bpoiahcvraqjhwpqcyvmxl",
+            "subscriptionId": null,
             "subscriptionStatus": "PendingFulfillmentStart",
             "offerDetails": {
-              "publisherId": "zhnlxf",
-              "offerId": "rh",
-              "planId": "uqlecfuht",
-              "planName": "secxe",
-              "termUnit": "skbmivxsechzkyuxvd",
-              "termId": "qvnaspsilt"
+              "publisherId": "gfsqxygpnerxmvols",
+              "offerId": "krzkefmpxztqyusidzgpchfaswuyce",
+              "planId": "kndxzygsanuiqzwbfbbvoipv",
+              "planName": "pwqjwlq",
+              "termUnit": "xyygyzcazkuelz",
+              "termId": "pwds"
             }
           },
           "user": {
-            "firstName": "pantcaqwknzxnjs",
-            "lastName": "loytwkjq",
+            "firstName": "qeuofehzypzljgcuysugefbgxde",
+            "lastName": "g",
             "emailAddress": ".K_@e7N-g1.xjqnbPs",
-            "upn": "sbfjcucbtwvnnhyzpfycykerzqjvo",
-            "phoneNumber": "smwcipwxoxdmzgj"
+            "upn": "uwtprzdfpsqmktx",
+            "phoneNumber": "aqpyxznvqpgkzohevynofrjdfgoo"
           },
           "provisioningState": "Succeeded",
           "partnerOrganizationProperties": {
-            "organizationId": "ugyxg",
-            "workspaceId": "jbpphzsonkhnaxbwlpmgrwuklcx",
-            "organizationName": "6.",
+            "organizationId": "lrtmbkvyvvoszhjevohkmyjhfyty",
+            "workspaceId": "xsepuskdhejaadusyxq",
+            "organizationName": "U2P_",
             "workspaceName": "L.-y_--:",
             "singleSignOnProperties": {
               "singleSignOnState": "Initial",
-              "enterpriseAppId": "hkqosvz",
-              "singleSignOnUrl": "mgr",
+              "enterpriseAppId": "mklfypyujwumgwdzae",
+              "singleSignOnUrl": "ymmtzkyghvinvhgnqlzwrr",
               "aadDomains": [
-                "ynmjdshvcxpusrtv"
+                "kfbleh"
               ],
               "provisioningState": "Succeeded"
             }
           }
         },
         "identity": {
-          "principalId": "b5684bd7-7958-4c0e-9795-d686c31746d2",
-          "tenantId": "b5684bd7-7958-4c0e-9795-d686c31746d2",
           "type": "None",
-          "userAssignedIdentities": {}
+          "userAssignedIdentities": {},
+          "principalId": "b5684bd7-7958-4c0e-9795-d686c31746d2",
+          "tenantId": "b5684bd7-7958-4c0e-9795-d686c31746d2"
         },
         "tags": {},
-        "location": "eyzfomwguzlzdrifqurd",
-        "id": "bmbatenoclkyauippgw",
-        "name": "vagudclsnq",
-        "type": "tjkxdhcixbtpudzrkvlsr",
+        "location": "mhqthlsatwvqkl",
+        "id": "bhslekyvgkfomahtvjiin",
+        "name": "ycyrfvupthkudm",
+        "type": "ldwwclcpqssjomo",
         "systemData": {
-          "createdBy": "aubmkgdmuh",
+          "createdBy": "zw",
           "createdByType": "User",
-          "createdAt": "2024-09-18T09:27:35.952Z",
-          "lastModifiedBy": "wqcubsxcrhxakigychifzumhtqjtr",
+          "createdAt": "2023-07-25T11:16:12.868Z",
+          "lastModifiedBy": "isirkhwcppaqoqzoebybzikzbzkjzf",
           "lastModifiedByType": "User",
-          "lastModifiedAt": "2024-09-18T09:27:35.953Z"
+          "lastModifiedAt": "2023-07-25T11:16:12.868Z"
         }
       }
     },

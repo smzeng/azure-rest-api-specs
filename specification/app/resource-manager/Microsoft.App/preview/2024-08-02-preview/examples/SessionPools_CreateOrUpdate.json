@@ -88,10 +88,6 @@
             ],
             "ingress": {
               "targetPort": 80
-            },
-            "registryCredentials": {
-              "server": "test.azurecr.io",
-              "identity": "/subscriptions/7a497526-bb8d-4816-9795-db1418a1f977/resourcegroups/test/providers/Microsoft.ManagedIdentity/userAssignedIdentities/testSP"
             }
           },
           "sessionNetworkConfiguration": {
@@ -141,10 +137,6 @@
             ],
             "ingress": {
               "targetPort": 80
-            },
-            "registryCredentials": {
-              "server": "test.azurecr.io",
-              "identity": "/subscriptions/7a497526-bb8d-4816-9795-db1418a1f977/resourcegroups/test/providers/Microsoft.ManagedIdentity/userAssignedIdentities/testSP"
             }
           },
           "sessionNetworkConfiguration": {
@@ -156,3 +148,4 @@
     }
   }
 }
+

@@ -1033,7 +1033,7 @@
         "x-ms-long-running-operation": true
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/securityPolicies": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/securityPolicy": {
       "get": {
         "operationId": "SecurityPoliciesInterface_ListByTrafficController",
         "tags": [
@@ -1083,7 +1083,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/securityPolicies/{securityPolicyName}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/securityPolicy/{securityPolicyName}": {
       "get": {
         "operationId": "SecurityPoliciesInterface_Get",
         "tags": [
@@ -1617,8 +1617,7 @@
             "description": "Resource in Canceled State"
           }
         ]
-      },
-      "readOnly": true
+      }
     },
     "ResourceId": {
       "type": "object",

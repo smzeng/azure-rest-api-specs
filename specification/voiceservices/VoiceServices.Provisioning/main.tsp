@@ -955,11 +955,22 @@ interface TeamsRequestsForInformation {
 @get
 @readsResource(NumberResource)
 @doc("List all the Numbers associated with this Communications Gateway.")
+@OpenAPI.extension(
+  "x-ms-pageable",
+  {
+    nextLinkName: "nextLink",
+  }
+)
 op listNumbers is RpcOperation<
   {
     ...StandardListQueryParameters;
     ...FilterQueryParameter;
     ...RecordCountQueryParameter;
   },
-  PagedNumberList & CountOfRecordsHeader
+  {
+    @statusCode statusCode: 200;
+    @header contentType: "application/json";
+    @bodyRoot success: PagedNumberList;
+    ...CountOfRecordsHeader;
+  }
 >;
