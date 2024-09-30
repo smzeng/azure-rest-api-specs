@@ -17,8 +17,12 @@ options:
   "@azure-tools/typespec-python":
     package-dir: "azure-ai-vision-face"
     package-name: "{package-dir}"
+    package-version: 1.0.0b2
     package-mode: dataplane
     flavor: azure
+    generate-test: true
+    generate-sample: true
+    examples-dir: "{project-root}/examples"
   "@azure-tools/typespec-csharp":
     package-dir: "Azure.AI.Vision.Face"
     namespace: "{package-dir}"
@@ -37,7 +41,6 @@ options:
     package-dir: "azure-ai-vision-face"
     namespace: com.azure.ai.vision.face
     partial-update: true
-    stream-style-serialization: false
     flavor: azure
 linter:
   extends:

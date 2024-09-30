@@ -1462,6 +1462,7 @@
         },
         "properties": {
           "$ref": "#/definitions/AssociationUpdateProperties",
+          "description": "The resource-specific properties for this resource.",
           "x-ms-client-flatten": true
         }
       }
@@ -1706,10 +1707,7 @@
           "description": "Provisioning State of Traffic Controller SecurityPolicy Resource",
           "readOnly": true
         }
-      },
-      "required": [
-        "policyType"
-      ]
+      }
     },
     "SecurityPolicyUpdate": {
       "type": "object",
@@ -1724,6 +1722,7 @@
         },
         "properties": {
           "$ref": "#/definitions/SecurityPolicyUpdateProperties",
+          "description": "The resource-specific properties for this resource.",
           "x-ms-client-flatten": true
         }
       }
@@ -1836,6 +1835,7 @@
         },
         "properties": {
           "$ref": "#/definitions/TrafficControllerUpdateProperties",
+          "description": "The resource-specific properties for this resource.",
           "x-ms-client-flatten": true
         }
       }
